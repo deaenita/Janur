@@ -15,4 +15,7 @@
     <string name="password">"Password"</string>
     <string name="register">"Register"</string>
     <string name="email_username">"Email / Username"</string>
+    <string name="icon_category_desc">"Icon Category Product Desc"</string>
+    <string name="category_name">"Category Name"</string>
+    <string name="kategori">"Kategori"</string>
 </resources>

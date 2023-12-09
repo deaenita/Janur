@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/categoryIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/category_product_icon"
+        android:layout_gravity="center"
+        android:contentDescription="@string/icon_category_desc"/>
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_name"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
