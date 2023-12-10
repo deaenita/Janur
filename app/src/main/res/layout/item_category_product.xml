@@ -2,15 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="8dp"
+    android:padding="10dp"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/categoryIcon"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:src="@drawable/category_product_icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_android_24"
+        android:background="@drawable/circle_background"
         android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
         android:contentDescription="@string/icon_category_desc"/>
 
     <TextView
