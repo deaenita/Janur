@@ -18,4 +18,7 @@
     <string name="icon_category_desc">"Icon Category Product Desc"</string>
     <string name="category_name">"Category Name"</string>
     <string name="kategori">"Kategori"</string>
+    <string name="vendor">"List Vendor"</string>
+    <string name="nama_vendor">"Nama Vendor"</string>
+    <string name="kota_vendor">"Kota Vendor"</string>
 </resources>
