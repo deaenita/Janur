@@ -21,4 +21,12 @@
     <string name="vendor">"List Vendor"</string>
     <string name="nama_vendor">"Nama Vendor"</string>
     <string name="kota_vendor">"Kota Vendor"</string>
+    <string name="image_view_like">Image View Like</string>
+    <string name="value_rating">5/5</string>
+    <string name="jumlah_ulasan">(100 Ulasan)</string>
+    <string name="detail_service">Detail Layanan</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="daftar_harga">Lihat Daftar Harga</string>
+    <string name="chat">Chat Vendor</string>
+    <string name="booking">Booking</string>
 </resources>
