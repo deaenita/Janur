@@ -32,4 +32,13 @@
     <string name="pesanan">Pesanan</string>
     <string name="akun">Akun</string>
     <string name="home">Home</string>
+    <string name="temukan_pernikahan_impian">Temukan pernikahan impian...</string>
+    <string name="tren_inspirasi_wedding">Tren Inspirasi Wedding</string>
+    <string name="vendor_populer">Vendor Populer</string>
+    <string name="lihat_detail">Lihat Detail</string>
+    <string name="tren_image">Tren Image</string>
+    <string name="tren_tittle">Judul Tren</string>
+    <string name="promo">Promo</string>
+    <string name="nama_layanan">Nama Layanan</string>
+    <string name="jumlah_booking">Jumlah Booking</string>
 </resources>
