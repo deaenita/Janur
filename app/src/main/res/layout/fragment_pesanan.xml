@@ -6,9 +6,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".views.PesananFragment">
 
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,27 +43,46 @@
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/filter_icon"/>
             </LinearLayout>
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
+
                 <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/navPesanan"
+                    android:id="@+id/navigation_rail_view"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:menu="@menu/nav_bottom"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp">
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rvListPesanan"
+                    android:layout_height="40dp"
+                    app:itemHorizontalTranslationEnabled="false"
+                    app:itemIconSize="32dp"
+                    app:labelVisibilityMode="labeled"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:menu="@menu/nav_pesanan" />
+
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_marginBottom="60dp"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvListPesanan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="85dp"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
 
-    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
 
 </FrameLayout>

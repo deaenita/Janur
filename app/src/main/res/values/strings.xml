@@ -42,4 +42,9 @@
     <string name="promo">Promo</string>
     <string name="nama_layanan">Nama Layanan</string>
     <string name="jumlah_booking">Jumlah Booking</string>
+    <string name="dalam_proses">Dalam Proses</string>
+    <string name="selesai">Selesai</string>
+    <string name="batal">Batal</string>
+    <string name="lokasi_vendor">Lokasi Vendor</string>
+    <string name="status">Status Pesanan</string>
 </resources>
