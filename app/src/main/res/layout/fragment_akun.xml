@@ -2,7 +2,145 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".views.AkunFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#97FFEB3B">
+            <ImageView
+                android:id="@+id/ivFotoProfil"
+                android:layout_width="55dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:src="@drawable/baseline_android_24"
+                android:background="@drawable/circle_background_white"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/icon_category_desc"
+                android:layout_marginStart="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nama_user"
+                        android:textSize="16sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvPengikut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengikut"
+                        android:textSize="16sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/space"
+                        android:textSize="16sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvMengikuti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mengikuti"
+                        android:textSize="16sp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvFavorit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:drawableStartCompat="@drawable/like_small"
+                android:textSize="16sp"
+                android:text="@string/favorit"
+                android:drawablePadding="8dp"
+                android:paddingEnd="35dp"
+                android:paddingStart="30dp"
+                android:textColor="#000"
+                app:drawableEndCompat="@drawable/baseline_arrow_right" />
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="1dp"
+                android:background="#CAC9C9"/>
+            <TextView
+                android:id="@+id/tvPusatBantuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:drawableStartCompat="@drawable/bantuan"
+                android:textSize="16sp"
+                android:text="@string/pusat_bantuan"
+                android:drawablePadding="8dp"
+                android:paddingEnd="35dp"
+                android:paddingStart="30dp"
+                android:textColor="#000"
+                app:drawableEndCompat="@drawable/baseline_arrow_right" />
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="1dp"
+                android:background="#CAC9C9"/>
+            <TextView
+                android:id="@+id/tvTentangApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:drawableStartCompat="@drawable/wedding_ring"
+                android:textSize="16sp"
+                android:text="@string/tentang_app"
+                android:drawablePadding="8dp"
+                android:paddingEnd="35dp"
+                android:paddingStart="30dp"
+                android:textColor="#000"
+                app:drawableEndCompat="@drawable/baseline_arrow_right" />
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="1dp"
+                android:background="#CAC9C9"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 </FrameLayout>

@@ -47,4 +47,12 @@
     <string name="batal">Batal</string>
     <string name="lokasi_vendor">Lokasi Vendor</string>
     <string name="status">Status Pesanan</string>
+    <string name="nama_user">Nama User</string>
+    <string name="space">|</string>
+    <string name="pengikut">Jumlah Pengikut</string>
+    <string name="mengikuti">Jumlah Mengikuti</string>
+    <string name="favorit">Favorit</string>
+    <string name="pusat_bantuan">Pusat Bantuan</string>
+    <string name="tentang_app">Tentang Aplikasi</string>
+
 </resources>
