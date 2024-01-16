@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,6 +30,25 @@ class HomepageFragment : Fragment() {
         }
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //click to list vendor
+        val textViewClick = view.findViewById<TextView>(R.id.tvLihatDetailVendorPopuler)
+        textViewClick.setOnClickListener {
+            navigateDetailVendorFragment()
+        }
+    }
+
+    //navigate to List Vendor
+    fun navigateDetailVendorFragment() {
+        val fragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container, ListVendorFragment())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -44,14 +64,12 @@ class HomepageFragment : Fragment() {
         recyclerView.setHasFixedSize(false)
 
         //set adapter
-        val categoryAdapter = CategoryProductHomeAdapter() // Sesuaikan dengan adapter yang kamu buat
+        val categoryAdapter = CategoryProductHomeAdapter()
         recyclerView.adapter = categoryAdapter
 
         // Inisialisasi ViewModel
         categoryViewModel = ViewModelProvider(this).get(CategoryProductHomeViewModel::class.java)
-        categoryViewModel.getCategories().observe(viewLifecycleOwner, { categories ->
-            categoryAdapter.submitList(categories)
-        })
+        categoryViewModel.getCategories().observe(viewLifecycleOwner, { categories -> categoryAdapter.submitList(categories)})
 
         //RV Tren
         // Inisialisasi RecyclerView
@@ -63,15 +81,12 @@ class HomepageFragment : Fragment() {
         rvWeddingTren.setHasFixedSize(false)
 
         //set adapter
-        val weddingTrenAdapter = WeddingTrenHomeAdapter() // Sesuaikan dengan adapter yang kamu buat
+        val weddingTrenAdapter = WeddingTrenHomeAdapter()
         rvWeddingTren.adapter = weddingTrenAdapter
 
         // Inisialisasi ViewModel
         trenViewModel = ViewModelProvider(this).get(WeddingTrenHomeViewModel::class.java)
-        trenViewModel.getCategories().observe(viewLifecycleOwner, { trenwedding ->
-            // Update data ke adapter saat data berubah
-            weddingTrenAdapter.submitList(trenwedding)
-        })
+        trenViewModel.getCategories().observe(viewLifecycleOwner, { trenwedding -> weddingTrenAdapter.submitList(trenwedding) })
 
         //RV Vendor Populer
         // Inisialisasi RecyclerView
@@ -88,10 +103,10 @@ class HomepageFragment : Fragment() {
 
         // Inisialisasi ViewModel
         populerVendorModel = ViewModelProvider(this).get(VendorPopulerHomeViewModel::class.java)
-        populerVendorModel.getCategories().observe(viewLifecycleOwner, { populerwedding ->
-            // Update data ke adapter saat data berubah
-            populerVendorAdapter.submitList(populerwedding)
-        })
+        populerVendorModel.getCategories().observe(viewLifecycleOwner, { populerwedding -> populerVendorAdapter.submitList(populerwedding) })
+
+        //onclick detail vendor
+
         return root
     }
 }
