@@ -23,8 +23,8 @@ class LoginActivity : AppCompatActivity() {
 
         binding.lifecycleOwner = this // Set lifecycle owner for observing LiveData
 
-        binding.btnLogin.setOnClickListener {
-            val email = binding.etEmailUsername.text.toString()
+        binding.buttonSignIn.setOnClickListener {
+            val email = binding.editTextEmail.text.toString()
             val password = binding.etPassword.text.toString()
 
             val newUser = LoginModel(email, password)

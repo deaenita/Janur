@@ -5,7 +5,9 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome_seru">"Welcome !"</string>
+    <string name="welcome">"Welcome "</string>
+    <string name="welcome_back">"WELCOME BACK"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
@@ -54,5 +56,8 @@
     <string name="favorit">Favorit</string>
     <string name="pusat_bantuan">Pusat Bantuan</string>
     <string name="tentang_app">Tentang Aplikasi</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="dont_have_account">Don’t have an account? </string>
+    <string name="sign_up_here"> <![CDATA[Sign up here.]]></string>
 
 </resources>
