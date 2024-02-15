@@ -60,10 +60,5 @@ class PesananFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        toolbar
-//        val toolbar = requireView().findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbarProductCategory)
-//        toolbar.title = "Kategori Produk"
-//        (requireActivity() as AppCompatActivity).setSupportActionBar(null)
     }
 }

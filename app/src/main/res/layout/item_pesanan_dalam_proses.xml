@@ -2,12 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp">
+        android:layout_margin="12dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#F3D7AC">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,17 +96,20 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                >
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnLihatDetail"
+                <TextView
+                    android:id="@+id/tvLihatDetailTrenInspirasi"
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_gravity="end|bottom"
-                    android:background="#FFC107"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
                     android:text="@string/lihat_detail"
-                    android:textSize="11sp" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#146EB5"
+                    android:layout_gravity="end|bottom"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
         </LinearLayout>

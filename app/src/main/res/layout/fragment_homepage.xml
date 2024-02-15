@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragmant_home"
+    android:background="@color/yellow"
     tools:context=".views.HomepageFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -16,9 +17,13 @@
         <TextView
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
             android:id="@+id/toolbar_title"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:text="@string/janur"
+            android:layout_marginStart="20dp"
             android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#2F2E41"
+            android:backgroundTint="@color/dark_yellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </androidx.appcompat.widget.Toolbar>
@@ -78,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_gravity="center_horizontal"
-                    android:padding="8dp"/>
+                    android:padding="6dp"/>
 
             </LinearLayout>
 
@@ -87,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/promo"
                 android:textSize="14sp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:textStyle="bold"/>
@@ -97,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="135dp"
                 android:src="@drawable/dummy_image"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:background="@drawable/corner_shaped" />
