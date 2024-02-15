@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         app:cardCornerRadius="30dp"
-        app:cardBackgroundColor="#F3D7AC">
+        app:strokeColor="@color/black"
+        app:cardBackgroundColor="#FBE3BD">
 
         <LinearLayout
             android:layout_width="match_parent"

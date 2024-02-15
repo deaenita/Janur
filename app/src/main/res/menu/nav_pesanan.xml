@@ -2,11 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_dalam_proses"
-        android:title="@string/dalam_proses" />
+        android:title="@string/dalam_proses"/>
+
     <item
         android:id="@+id/navigation_pesanan"
-        android:title="@string/selesai" />
+        android:title="@string/selesai"/>
+
     <item
         android:id="@+id/navigation_akun"
-        android:title="@string/batal" />
+        android:title="@string/batal"/>
+
 </menu>
