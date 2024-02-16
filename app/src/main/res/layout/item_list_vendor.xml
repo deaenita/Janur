@@ -3,12 +3,12 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="10dp"
+    app:cardCornerRadius="15dp"
     android:orientation="vertical"
-    android:layout_marginTop="20dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginBottom="2dp"
-    android:layout_gravity="center_horizontal">
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,8 +38,8 @@
             android:text="@string/kota_vendor"
             android:textSize="16sp"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textColor="#54518F"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
