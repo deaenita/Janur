@@ -2,9 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/yellow"
     tools:context=".views.AkunFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -36,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#97FFEB3B">
+            android:background="#FFCD7E">
             <ImageView
                 android:id="@+id/ivFotoProfil"
                 android:layout_width="55dp"
@@ -61,10 +62,10 @@
                         android:text="@string/nama_user"
                         android:textSize="16sp"
                         android:layout_marginStart="12dp"
+                        android:textColor="#2F2E41"
                         android:layout_marginTop="20dp"
                         android:textStyle="bold"/>
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -75,6 +76,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/pengikut"
                         android:textSize="16sp"
+                        android:textColor="#2F2E41"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"/>
 
@@ -82,6 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/space"
+                        android:textColor="#2F2E41"
                         android:textSize="16sp"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"/>
@@ -92,6 +95,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mengikuti"
                         android:textSize="16sp"
+                        android:textColor="#2F2E41"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="8dp"/>
                 </LinearLayout>
@@ -103,62 +107,89 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/tvFavorit"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:drawableStartCompat="@drawable/like_small"
-                android:textSize="16sp"
-                android:text="@string/favorit"
-                android:drawablePadding="8dp"
-                android:paddingEnd="35dp"
-                android:paddingStart="30dp"
-                android:textColor="#000"
-                app:drawableEndCompat="@drawable/baseline_arrow_right" />
-            <androidx.viewpager.widget.ViewPager
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_akun">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/fav_image"/>
+                <TextView
+                    android:id="@+id/tvFavorit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/favorit"
+                    android:textColor="#000"
+                    app:drawableEndCompat="@drawable/baseline_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="1dp"
-                android:background="#CAC9C9"/>
-            <TextView
-                android:id="@+id/tvPusatBantuan"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_akun">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/pusat_bantuan"/>
+                <TextView
+                    android:id="@+id/tvPusatBantuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/pusat_bantuan"
+                    android:textColor="#000"
+                    app:drawableEndCompat="@drawable/baseline_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:drawableStartCompat="@drawable/bantuan"
-                android:textSize="16sp"
-                android:text="@string/pusat_bantuan"
-                android:drawablePadding="8dp"
-                android:paddingEnd="35dp"
-                android:paddingStart="30dp"
-                android:textColor="#000"
-                app:drawableEndCompat="@drawable/baseline_arrow_right" />
-            <androidx.viewpager.widget.ViewPager
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="1dp"
-                android:background="#CAC9C9"/>
-            <TextView
-                android:id="@+id/tvTentangApp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:drawableStartCompat="@drawable/wedding_ring"
-                android:textSize="16sp"
-                android:text="@string/tentang_app"
-                android:drawablePadding="8dp"
-                android:paddingEnd="35dp"
-                android:paddingStart="30dp"
-                android:textColor="#000"
-                app:drawableEndCompat="@drawable/baseline_arrow_right" />
-            <androidx.viewpager.widget.ViewPager
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="1dp"
-                android:background="#CAC9C9"/>
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_akun">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/tentang_app"/>
+                <TextView
+                    android:id="@+id/tvTentangApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/tentang_app"
+                    android:textColor="#000"
+                    app:drawableEndCompat="@drawable/baseline_arrow_right" />
+            </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
 
 </FrameLayout>
