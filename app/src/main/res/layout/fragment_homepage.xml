@@ -57,6 +57,7 @@
                     android:drawablePadding="10dp"/>
 
                 <ImageView
+                    android:id="@+id/txtTigaEnamPuluh"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_gravity="center"

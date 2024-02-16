@@ -1,18 +1,18 @@
 package com.janur.views
 
-import android.graphics.Color
-import android.media.Image
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.janur.DetailVendorActivity
 import com.janur.R
 import com.janur.adapter.CategoryProductHomeAdapter
 import com.janur.adapter.VendorPopulerHomeAdapter
@@ -20,6 +20,7 @@ import com.janur.adapter.WeddingTrenHomeAdapter
 import com.janur.viewmodels.CategoryProductHomeViewModel
 import com.janur.viewmodels.VendorPopulerHomeViewModel
 import com.janur.viewmodels.WeddingTrenHomeViewModel
+
 
 class HomepageFragment : Fragment() {
 
@@ -46,6 +47,11 @@ class HomepageFragment : Fragment() {
         imageNotif.setOnClickListener {
             navigateToListCategory()
         }
+
+        val imageTigaPuluh = view.findViewById<ImageView>(R.id.txtTigaEnamPuluh)
+        imageTigaPuluh.setOnClickListener {
+            navigateToDetailProduk()
+        }
     }
 
     //navigate to List Vendor
@@ -63,6 +69,11 @@ class HomepageFragment : Fragment() {
         fragmentTransaction.replace(R.id.fragment_container, CategoryProductFragment())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
+    }
+
+    fun navigateToDetailProduk(){
+        val intent = Intent(context, DetailVendorActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onCreateView(
