@@ -66,6 +66,7 @@
                     android:src="@drawable/treed_view_icon"/>
 
                 <ImageView
+                    android:id="@+id/imgNotif"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_gravity="center"

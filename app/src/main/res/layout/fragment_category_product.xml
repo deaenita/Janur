@@ -7,15 +7,26 @@
     android:id="@+id/fragmentListCategory"
     tools:context=".views.CategoryProductFragment">
 
-<!--        <androidx.appcompat.widget.Toolbar-->
-<!--            android:id="@+id/toolbarProductCategory"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="?attr/actionBarSize"-->
-<!--            android:background="#80FFEB3B"-->
-<!--            android:elevation="4dp"-->
-<!--            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
-<!--            android:title="Judul Awal Toolbar" />-->
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_yellow"
+            android:titleTextColor="@android:color/black">
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:id="@+id/toolbar_title"
+                    android:layout_gravity="start"
+                    android:text="@string/janur"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#2F2E41"
+                    android:backgroundTint="@color/dark_yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:layout_width="match_parent"
@@ -24,13 +35,15 @@
             android:textStyle="bold"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:textSize="18sp"/>
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvProductCategory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="20dp"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"/>
 
 </LinearLayout>

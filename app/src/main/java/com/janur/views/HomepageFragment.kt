@@ -1,11 +1,13 @@
 package com.janur.views
 
 import android.graphics.Color
+import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
@@ -39,6 +41,11 @@ class HomepageFragment : Fragment() {
         textViewClick.setOnClickListener {
             navigateDetailVendorFragment()
         }
+
+        val imageNotif = view.findViewById<ImageView>(R.id.imgNotif)
+        imageNotif.setOnClickListener {
+            navigateToListCategory()
+        }
     }
 
     //navigate to List Vendor
@@ -46,6 +53,14 @@ class HomepageFragment : Fragment() {
         val fragmentManager = requireActivity().supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragment_container, ListVendorFragment())
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+    }
+
+    fun navigateToListCategory(){
+        val fragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container, CategoryProductFragment())
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
