@@ -59,6 +59,10 @@
     <string name="sign_in">SIGN IN</string>
     <string name="dont_have_account">Don’t have an account? </string>
     <string name="sign_up_here"> <![CDATA[Sign up here.]]></string>
+    <string name="sign_in_here"> <![CDATA[Sign in here.]]></string>
     <string name="janur">JANUR</string>
+    <string name="welcome_janur">Warmest greetings from Janur! Were excited that youve trusted your special day with us </string>
+    <string name="get_started">GET STARTED</string>
+    <string name="already_have_an_account">Already have an account?</string>
 
 </resources>
