@@ -43,15 +43,15 @@ class HomepageFragment : Fragment() {
             navigateDetailVendorFragment()
         }
 
-        val imageNotif = view.findViewById<ImageView>(R.id.imgNotif)
-        imageNotif.setOnClickListener {
-            navigateToListCategory()
-        }
+//        val imageNotif = view.findViewById<ImageView>(R.id.imgNotif)
+//        imageNotif.setOnClickListener {
+//            navigateToListCategory()
+//        }
 
-        val imageTigaPuluh = view.findViewById<ImageView>(R.id.txtTigaEnamPuluh)
-        imageTigaPuluh.setOnClickListener {
-            navigateToDetailProduk()
-        }
+//        val imageTigaPuluh = view.findViewById<ImageView>(R.id.txtTigaEnamPuluh)
+//        imageTigaPuluh.setOnClickListener {
+//            navigateToDetailProduk()
+//        }
     }
 
     //navigate to List Vendor
